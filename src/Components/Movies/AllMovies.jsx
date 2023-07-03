@@ -77,13 +77,13 @@ const AllMovies = () => {
                 <option value="ko" className='bg-[#457b9d] '>Korean - 한국인</option>
                 <option value="zh" className='bg-[#457b9d] '>Chinese - 中国人</option>
               </select>
-              
+
             </div>}
           </div>
           <ul class="grid w-full gap-6 md:grid-cols-5">
             <li>
               <input type="radio" id="all" name="hosting" value="all" class="hidden peer" checked={selectedOption === "all"} onChange={(event) => { setSelectedOption(event.target.value); setTitle("All"); setShowLanguage(true) }} />
-              <label for="all" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:bg-blue-600 peer-checked:text-white hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+              <label for="all" class="inline-flex items-center justify-between w-full h-[36px] p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:bg-blue-600 peer-checked:text-white hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                 <div class="block">
                   <div class="w-full text-lg font-semibold">All</div>
 
@@ -93,7 +93,7 @@ const AllMovies = () => {
             </li>
             <li>
               <input type="radio" id="now_playing" name="hosting" value="now_playing" class="hidden peer" checked={selectedOption === "now_playing"} onChange={(event) => { setSelectedOption(event.target.value); setTitle("Now Playing"); setShowLanguage(false) }} />
-              <label for="now_playing" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:bg-blue-600 peer-checked:text-white hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+              <label for="now_playing" class="inline-flex items-center justify-between w-full h-[36px] p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:bg-blue-600 peer-checked:text-white hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                 <div class="block">
                   <div class="w-full text-lg font-semibold">Now Playing</div>
 
@@ -103,7 +103,7 @@ const AllMovies = () => {
             </li>
             <li>
               <input type="radio" id="popular" name="hosting" value="popular" class="hidden peer" checked={selectedOption === "popular"} onChange={(event) => { setSelectedOption(event.target.value); setTitle("Popular"); setShowLanguage(false) }} />
-              <label for="popular" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:bg-blue-600 peer-checked:text-white hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+              <label for="popular" class="inline-flex items-center justify-between w-full h-[36px] p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:bg-blue-600 peer-checked:text-white hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                 <div class="block">
                   <div class="w-full text-lg font-semibold">Popular</div>
 
@@ -113,7 +113,7 @@ const AllMovies = () => {
             </li>
             <li>
               <input type="radio" id="top_rated" name="hosting" value="top_rated" class="hidden peer" checked={selectedOption === "top_rated"} onChange={(event) => { setSelectedOption(event.target.value); setTitle("Top Rated"); setShowLanguage(false) }} />
-              <label for="top_rated" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:bg-blue-600 peer-checked:text-white hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+              <label for="top_rated" class="inline-flex items-center justify-between w-full h-[36px] p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:bg-blue-600 peer-checked:text-white hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                 <div class="block">
                   <div class="w-full text-lg font-semibold">Top Rated</div>
 
@@ -123,7 +123,7 @@ const AllMovies = () => {
             </li>
             <li>
               <input type="radio" id="upcoming" name="hosting" value="upcoming" class="hidden peer" checked={selectedOption === "upcoming"} onChange={(event) => { setSelectedOption(event.target.value); setTitle("Upcoming"); setShowLanguage(false) }} />
-              <label for="upcoming" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:bg-blue-600 peer-checked:text-white hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
+              <label for="upcoming" class="inline-flex items-center justify-between w-full h-[36px] p-5 text-gray-500 bg-white border border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 dark:peer-checked:text-blue-500 peer-checked:bg-blue-600 peer-checked:text-white hover:text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700">
                 <div class="block">
                   <div class="w-full text-lg font-semibold">Upcoming</div>
 
@@ -133,7 +133,7 @@ const AllMovies = () => {
             </li>
           </ul>
 
-          
+
         </div>
 
         <SearchMovies searchValue={searchValue} setSearchValue={setSearchValue} handleSearchClear={handleSearchClear} searchTitle="Search Movie" />
@@ -142,7 +142,7 @@ const AllMovies = () => {
         <div className='text-center'>
           {data.map((item) => (
             <HomeCard url={item.poster_path} title={item.title} vote={item.vote_average} id={item.id} media='movie' />
-            
+
           ))}
         </div>
 

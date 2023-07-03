@@ -5,8 +5,8 @@ import TrendingMovies from '../Components/Movies/TrendingMovies'
 const Movies = () => {
   return (
     <div>
-        <AllMovies/>
-        <TrendingMovies/>
+      <AllMovies />
+      <TrendingMovies />
     </div>
   )
 }
