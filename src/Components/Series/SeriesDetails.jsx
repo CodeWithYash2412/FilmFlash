@@ -5,12 +5,12 @@ const MovieDetails = () => {
     const [movieData, setMovieData] = useState([]);
     const location = useLocation();
     const { data } = location.state;
-    
+
     const [crew, setCrew] = useState([])
     const [video, setVideo] = useState([])
     const [provider, setProvider] = useState([])
 
-    
+
 
     useEffect(() => {
         fetchData();
@@ -48,8 +48,8 @@ const MovieDetails = () => {
 
     const { backdrop_path, status, vote_average, vote_count, poster_path, name, seasons, episode_run_time, last_episode_to_air, next_episode_to_air, first_air_date, last_air_date, number_of_episodes, number_of_seasons, genres, tagline, overview, production_companies, belongs_to_collection, runtime } = movieData
 
-    
-    
+
+
 
     const bgurl = `https://image.tmdb.org/t/p/w500${backdrop_path}`;
 
@@ -91,7 +91,7 @@ const MovieDetails = () => {
                                         <h1>Next Episode to Air : <span className=' font-bold'>Episode {next_episode_to_air.episode_number}</span> on <span className='font-bold'>{next_episode_to_air.air_date}</span></h1>
                                     </div>
                                 )}
-                                
+
                             </div>
                         </div>
                     </div>
@@ -152,17 +152,17 @@ const MovieDetails = () => {
 
 
 
-                
+
                 {crew && crew.length > 0 && <><div className='mt-20'>
                     {crew && crew.length > 0 && <h1 className='text-2xl m-5 text-center'>Cast of the Film</h1>}
                     {crew && crew.length > 0 && (
                         <div className='mx-24 grid grid-cols-[repeat(5,1fr)] gap-2.5'>
                             {crew.map((crewMember) => (
                                 crewMember.profile_path && (
-                                    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                                    <div className="max-w-sm bg-white flex items-center border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                                         <div className='flex justify-center'>
                                             <a href="#">
-                                                <img className="rounded-lg m-2" width={180} src={`https://image.tmdb.org/t/p/original${crewMember.profile_path}`} alt="" />
+                                                <img className="rounded-lg m-2" width={60} src={`https://image.tmdb.org/t/p/original${crewMember.profile_path}`} alt="" />
                                             </a>
                                         </div>
                                         <div className="p-5">

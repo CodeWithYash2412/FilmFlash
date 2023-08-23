@@ -18,7 +18,7 @@ const CurrentlyMovie = () => {
             console.log('Error fetching data:', error);
         }
 
-        
+
     };
     return (
         <div className='flex justify-center'>
@@ -28,7 +28,7 @@ const CurrentlyMovie = () => {
                     {data.map((item) => (
                         <>
                             <HomeCard url={item.poster_path} title={item.title} vote={item.vote_average} id={item.id} imdbId={item.imdb_id} media="movie" />
-                            
+
                         </>
                     ))}
                 </div>

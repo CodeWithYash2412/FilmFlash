@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 
+
 const MovieDetails = () => {
   const [movieData, setMovieData] = useState([]);
   const location = useLocation();
@@ -120,6 +121,7 @@ const MovieDetails = () => {
           )}
         </div>}
 
+
         {provider && provider.length > 0 && <h1 className='text-2xl m-5 text-center'>Where to Watch</h1>}
         <div className="flex items-center justify-evenly h-1/3 m-5">
           {provider && provider.map((provide) => (
@@ -164,10 +166,10 @@ const MovieDetails = () => {
           <div className='mx-24 grid grid-cols-[repeat(5,1fr)] gap-2.5'>
             {crew && crew.map((crew) => (
               crew.profile_path && (
-                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <div class="max-w-sm bg-white flex items-center border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                   <div className='flex justify-center'>
                     <a href="#">
-                      <img class="rounded-lg m-2" width={180} src={`https://image.tmdb.org/t/p/original${crew.profile_path}`} alt="" />
+                      <img class="rounded-lg m-2" width={60} src={`https://image.tmdb.org/t/p/original${crew.profile_path}`} alt="" />
                     </a>
                   </div>
                   <div class="p-5">
